@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: "Playfair Display", serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- home -->
+    <section id="home">
+        <div
+            class="w-full md:h-screen h-96 bg-[url('https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2021/06/061521_mt_cosmetics_feat.jpg?resize=1380%2C776&ssl=1')] bg-no-repeat bg-cover">
+            <div class="w-full md:h-screen h-96 " style="background-color: rgba(0, 0, 0, 0.401);">
+                <nav class=" bg-red-900 w-full p-6 flex justify-center items-center">
+                    <ul class="flex text-white flex justify-evenly w-full">
+                        <li class="md:text-xl px-2 hover:text-red-300 hover:cursor-pointer"><a href="#home">HOME</a>
+                        </li>
+                        <li class="md:text-xl px-2 hover:text-red-300 hover:cursor-pointer"><a
+                                href="#cosmetics">COSMETICS</a></li>
+                        <li class="md:text-xl px-2 hover:text-red-300 hover:cursor-pointer"><a href="#skin">SKIN CARE</a>
+                        </li>
+                        <li class="md:text-xl px-2 hover:text-red-300 hover:cursor-pointer"><a href="#haircare">HAIR CARE</a>
+                        </li>
+                        <li class="md:text-xl px-2 hover:bg-red-200 hover:text-black rounded-full"><button>SIGN
+                                UP</button></li>
+                        <li class="md:text-xl px-2 cursor-pointer"><i class="fa-solid fa-bag-shopping fa-beat"
+                                style="color: #f5f5f5;"></i></li>
+                    </ul>
+                </nav>
+
+                <div class="flex justify-center items-center w-full flex-col md:pt-64 pt-20">
+                    <h1 class=" text-white md:text-9xl text-6xl">Glow & Go</h1>
+                    <p class="mt-4 p-4 text-center text-2xl md:text-4xl">Wake Up & Make Up</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cosmetics -->
+    <section id="cosmetics">
+        <div class="w-full bg-orange-300">
+            <div class="w-full flex justify-center items-center">
+                <h1 class="mt-12  md:text-4xl text-xl text-black">OFFERS THAT LIGHT UP THE SEASON</h1>
+
+            </div>
+            <div class="md:grid grid-cols-3 md:mt-16 mt-8 md:px-40 px-4 w-full">
+                <div class="relative group p-8">
+                    <img class=" max-h-72 cursor-pointer rounded-md hover:opacity-50"
+                        src="https://m.media-amazon.com/images/I/51joJL9oVYL.jpg" alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity text-4xl">
+                        KAY BEAUTY
+
+                    </div>
+                    <p class="text-center text-2xl">Up To 20% Off <br> On Bestsellers!</p>
+
+                </div>
+                <div class="relative group p-8">
+                    <img class="max-h-72 cursor-pointer rounded-md"
+                        src="https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw635a90e8/2023/032023_HaloGlow-Duo1_Main-2_IGF.jpg?sw=700&q=90"
+                        alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity text-4xl">
+                        e.l.f. <br>eyes.lips.face.
+
+                    </div>
+                    <p class="text-center text-2xl">Up To 25% Off <br> On Entire Range</p>
+
+                </div>
+                <div class="relative group p-8">
+                    <img class="max-h-72 cursor-pointer rounded-md"
+                        src="https://swissbeauty.in/cdn/shop/articles/best-sweat-proof-makeup-products-to-buy-in-summer-swiss-beauty_1308ee64-dd0a-47a3-a309-4fee7303afdb.jpg?v=1706773579"
+                        alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity text-4xl">
+                        SWISS BEAUTY
+
+                    </div>
+                    <p class="text-center text-2xl">Up To 35% Off <br> On Entire Range</p>
+
+                </div>
+            </div>
+
+            <div class="md:grid grid-cols-3 md:mt-12 mt-8 md:px-40 w-full px-4">
+                <div class="relative group p-8">
+                    <img class="max-h-72 cursor-pointer rounded-md"
+                        src="https://marscosmetics.in/cdn/shop/products/mascara_92146d1c-9775-47df-9f70-ef8083a8378a.jpg?v=1665839192&width=1000"
+                        alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity text-6xl">
+                        MARS
+
+                    </div>
+                    <p class="text-center text-2xl">Up To 20% Off <br> On Entire Range</p>
+
+                </div>
+                <div class="relative group p-8">
+                    <img class="max-h-72 cursor-pointer rounded-md"
+                        src="https://www.ecosmetics.com/wp-content/uploads/2022/07/Beauty-Brand-Profile-Charlotte-Tilbury.jpeg"
+                        alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity text-4xl">
+                        CHARLOTTE TILBURY
+
+                    </div>
+                    <p class="text-center text-2xl">On ₹4000: 10% Off <br> On ₹5000: Unlock two gifts</p>
+
+
+                </div>
+                <div class="relative group p-8">
+                    <img class="max-h-72 cursor-pointer rounded-md"
+                        src="https://i.ebayimg.com/thumbs/images/g/oRIAAOSwXt5mVM3M/s-l1200.jpg" alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity text-4xl">
+                        MAYBELLINE <br>NEWYORK
+
+                    </div>
+                    <p class="text-center text-2xl">Up To 40% Off <br> On Bestsellers!</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- skin care -->
+
+    <section id="skin">
+        <div class="w-full flex justify-center items-center bg-orange-300">
+            <h1 class="mt-12  md:text-4xl text-xl text-black text-center">PAMPER YOURSELF WITH A SKINCARE ROUTINE....</h1>
+    
+        </div>
+        <div class="w-full md:grid grid-cols-2 bg-orange-300 pt-8">
+    
+    
+    
+                    <div>
+                        <img class="w-full h-96 md:pt-3 pt-1" src="./images/woman-applying-skincare-serum-her-face-cartoon-vector-illustration_1332465-14418-removebg-preview.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="w-full md:grid grid-cols-3 flex pt-8 pb-3">
+                        
+                        <div class="md:grid grid-rows-2">
+    
+                            
+                            <!-- face wash -->
+    
+    
+                            <div><img class="rounded-full w-48 cursor-pointer md:pr-5 pl-2 h-32 transition ease-in-out delay-150 hover:scale-110 duration-300..." src="https://aqualogica.in/cdn/shop/files/1_2e1f8699-985a-4264-9ebe-d63252fcfb91.jpg?v=1702031696" alt="">
+                            <p class="md:text-2xl text-xl md:pl-8 pl-4">Face Wash</p></div>
+    
+                            <div>
+                                <!-- serum -->
+                                <img class="rounded-full w-48 cursor-pointer mt-5 md:pr-5 pl-2 h-32 transition ease-in-out delay-150 hover:scale-110 duration-300..." src="https://dr.rashel.in/cdn/shop/files/Vitamincserum-01_1_11zon_900x.jpg?v=1722516132" alt="">
+                                <p class="md:text-2xl text-xl md:pl-12 pl-9">Serum</p>
+                            </div>
+                            
+                        </div>
+                        <div class="md:grid grid-rows-2">
+    
+                            <!-- moisturizer -->
+    
+                            <div><img class="rounded-full w-48 cursor-pointer md:pr-5 pl-2 h-32 transition ease-in-out delay-150 hover:scale-110 duration-300..." src="https://plumgoodness.com/cdn/shop/files/01-Website.jpg?v=1702450810&width=1100" alt="">
+                                <p class="md:text-2xl text-xl md:pl-8 pl-4">Moisturiser</p>
+                            </div>
+                            
+                            
+                            <!-- sun screen -->
+                            <div><img class="rounded-full w-48 cursor-pointer mt-5 md:pr-5 pl-2 h-32 transition ease-in-out delay-150 hover:scale-110 duration-300..." src="https://www.dotandkey.com/cdn/shop/files/1--Porcelain_03286674-92f6-4f0e-b1fc-de34e4e4c35e.jpg?v=1727354454" alt="">
+                            <p class="md:text-2xl text-xl md:pl-10 pl-4">Sunscreen</p></div>
+    
+                        </div>
+    
+                        <div class="md:grid grid-rows-2">
+    
+                            
+                            <!-- toner  -->
+    
+                           <div> <img class="rounded-full w-48 cursor-pointer w-75 md:pr-5 pl-2 pr-2 h-32 transition ease-in-out delay-150 hover:scale-110 duration-300..." src=" https://www.goodvibesonly.in/cdn/shop/files/7_654dec6e-f50e-43a5-97d0-1b06bf5bf13c_1400x.jpg?v=1701768565" alt="">
+                            <p class="md:text-2xl text-xl md:pl-14 pl-10">Toner</p>
+
+                        </div>
+    
+                             <!-- face mask -->
+                            <div><img class="rounded-full w-48 cursor-pointer mt-5 md:pr-5 pl-2 pr-2 h-32 transition ease-in-out delay-150 hover:scale-110 duration-300..." src="https://images.mamaearth.in/catalog/product/u/b/ubtan-face-mask_2.jpg?format=auto&height=600" alt="">
+                                <p class="md:text-2xl text-xl md:pl-10 pl-5">Face Mask</p>
+                            </div>
+    
+                        </div>
+
+    
+                              
+
+                    </div>
+
+                   
+    
+        </div>
+        <div class="flex justify-center items-center bg-orange-300 md:pt-8">
+            <button class="md:text-2xl p-2 bg-black text-white flex justify-center items-center rounded">SHOP ALL ></button>
+
+</div>
+    </section>
+
+
+    <!-- hair care -->
+     
+        <section id="haircare" class="bg-orange-300">
+
+            <h1 class="md:pt-24 py-10 text-center  md:text-4xl text-xl text-black">HAIR CARE</h1>
+            <div class="flex gap-6 overflow-x-auto  md:pt-20 snap-x snap-mandatory">
+
+                
+                
+                <figure class="w-96 snap-start shrink-0 cursor-pointer">
+                    <img class="w-full h-full object-cover rounded-md" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6d760f134697309.61dadd507908d.jpg" alt="">
+    
+                </figure>
+                <figure class="w-96 snap-start shrink-0 cursor-pointer">
+                    <img class="w-full h-full object-cover rounded-md" src="https://th.bing.com/th/id/OIP.Sq1DnbFvUqI-_t8XuWanfgHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
+    
+                </figure>
+                <figure class="w-96 snap-start shrink-0 cursor-pointer">
+                    <img class="w-full h-full object-cover rounded-md" src="https://images.bblunt.com/catalog/product/c/u/curly-hair-shampoo.jpg?format=auto&width=400&height=400" alt="">
+    
+                </figure>
+                <figure class="w-96 snap-start shrink-0 cursor-pointer">
+                    <img class="w-full h-full object-cover rounded-md" src="https://cdn.notonthehighstreet.com/fs/12/34/df46-ce63-42de-8178-23e1cacc7fcb/original_deep-repair-organic-hair-mask.jpg" alt="">
+    
+                </figure>
+                <figure class="w-96 snap-start shrink-0 cursor-pointer">
+                    <img class="w-full h-full object-cover rounded-md" src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2/static/img/product/356015/mamaearth-rosemary-hair-growth-oil-with-rosemary-and-methi-dana-for-promoting-hair-growth-150-ml_1_display_1686745148_57864ef1.jpg" alt="">
+    
+                </figure>
+                
+    
+            </div>
+
+        </section>
+
+
+        <!-- footer -->
+
+        <footer class="relative bg-red-900 pb-20 pt-8 pb-6">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                  <h4 class="text-3xl font-semibold text-white">Glow & Go</h4>
+                  <h5 class="text-lg mt-0 mb-2 text-white">
+                    Wake Up & Make Up
+                  </h5>
+                  <div class="mt-6 lg:mb-0 mb-6">
+                    <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                        <i class="fa-brands fa-instagram"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                      <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                        <i class="fa-brands fa-pinterest"></i></button>
+                  </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="flex flex-wrap items-top mb-6">
+                    <div class="w-full lg:w-4/12 px-4 ml-auto">
+                      <span class="block uppercase text-white text-xl font-semibold mb-2">About Us</span>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">2100+ Brands</a>
+                        </li>
+                        <li>
+                          <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Free Shipping</a>
+                        </li>
+                        <li>
+                          <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">100% Authentic</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="w-full lg:w-4/12 px-4">
+                      <span class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm">Easy Returns</span>
+                      <ul class="list-unstyled">
+                        
+                        <li>
+                          <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Terms &amp; Conditions</a>
+                        </li>
+                        <li>
+                          <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#work">Privacy Policy</a>
+                        </li>
+                        <li>
+                          <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#conact">Contact Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-6 border-blueGray-300">
+              <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                  <div class="text-sm text-white font-semibold py-1">
+                    Copyright © <span id="get-current-year">2024</span><a href="" class="text-white hover:text-gray-800" target="_blank"> Glow &
+                    <a href="" class="text-white hover:text-blueGray-800">Go</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+     
+</body>
+
+</html>
